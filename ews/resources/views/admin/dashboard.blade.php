@@ -88,7 +88,7 @@
             <div class="card-header pb-0">
               <h6>Graphic</h6>
               <p class="text-sm">
-                <span class="font-weight-bold">Getaran</span>
+                <span class="font-weight-bold">Getaran</span> <!-- Getaran -->
               </p>
             </div>
             <div class="card-body p-2">
