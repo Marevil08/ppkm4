@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #27293d;">
   <div class="container-fluid">
     <!-- Navbar brand/logo -->
-    <a class="navbar-brand" href="#">Earthquake Early Warning System</a>
+    <a class="navbar-brand" style="color: white;">Earthquake Early Warning System</a>
     
     <!-- Navbar toggler for responsive design -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
