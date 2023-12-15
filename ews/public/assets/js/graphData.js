@@ -10,7 +10,7 @@ function updateChartAcceleration (timestamps, values){
         data: {
             labels: timestamps,
             datasets: [{
-                label: "Mobile apps",
+                label: "Getaran",
                 tension: 0.4,
                 borderWidth: 0,
                 pointRadius: 0,
@@ -144,7 +144,7 @@ function updateChartRotation (timestamps, values){//ubah
         data: {
             labels: timestamps,
             datasets: [{
-                label: "Mobile apps",
+                label: "Kemiringan",
                 tension: 0.4,
                 borderWidth: 0,
                 pointRadius: 0,
@@ -278,7 +278,7 @@ function updateChartSuhu (timestamps, values){//ubah
         data: {
             labels: timestamps,
             datasets: [{
-                label: "Mobile apps",
+                label: "Suhu",
                 tension: 0.4,
                 borderWidth: 0,
                 pointRadius: 0,
@@ -413,7 +413,7 @@ function updateChartKelembapan (timestamps, values){//ubah
         data: {
             labels: timestamps,
             datasets: [{
-                label: "Mobile apps",
+                label: "Kelembapan",
                 tension: 0.4,
                 borderWidth: 0,
                 pointRadius: 0,

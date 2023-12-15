@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #27293d;">
     <div class="container-fluid">
       <!-- Navbar brand/logo -->
-      <a class="navbar-brand" href="#">Earthquake Early Warning System</a>
+      <a class="navbar-brand" style="color: white;">Earthquake Early Warning System</a>
       
       <!-- Navbar toggler for responsive design -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
   <div class="container-fluid product-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="col-lg-8 offset-lg-2 text-center"> <br>
                 <h2>Our Featured Product</h2>
                 <img src="../assets/img/alat.jpg" alt="Featured Product">
                 <p>
@@ -92,8 +92,8 @@
                 <p>51421418</p>
                 <p>Universitas Gunadarma</p>
             </div>
-        </div>
-        <div class="col-lg-12">
+        </div> 
+        <div class="col-lg-12"> <br>
             <div class="team-member d-flex flex-column justify-content-center align-items-center">
                 <img src="../assets/img/dosen.jpg" alt="Team Member" class="img-fluid">
                 <h4>Sandy S. Prayogo</h4>
@@ -102,4 +102,28 @@
             </div>
         </div>
     </div>
-</div>
+</div> <br>
+
+<footer class="footer2"> 
+  <center>
+    <p>&copy; Kartanagari 2023</p>
+    <p>Powered by: </p>
+    <div class="image-container2">
+      <div class="ugtp">
+        <img width="200px" src="../assets/img/ugtechnopark.png">
+      </div>
+
+      <div class="merdeka">
+        <img width="100px" src="../assets/img/merdeka.png">
+      </div>
+
+      <div class="gundar">
+        <img width="100px" src="../assets/img/gundar.png">
+      </div>
+
+      <div class="kartanagari">
+        <img width="100px" src="../assets/img/kartanagari.png">
+      </div>
+    </div>
+  </center>
+</footer>

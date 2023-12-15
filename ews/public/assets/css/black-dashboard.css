@@ -89,6 +89,7 @@ body {
   color: #525f7f;
   text-align: left;
   background-color: #1e1e2f;
+
 }
 
 [tabindex="-1"]:focus {
@@ -4690,10 +4691,11 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #6c75;
   pointer-events: none;
   cursor: default;
 }
@@ -4727,7 +4729,7 @@ input[type="button"].btn-block {
 .nav-tabs .nav-item.show .nav-link {
   color: #525f7f;
   background-color: #1e1e2f;
-  border-color: #e3e3e3 #e3e3e3 #1e1e2f;
+  border-color: #e3e3e3 #e3e3e3 #1e1e2f; 
 }
 
 .nav-tabs .dropdown-menu {
@@ -5065,10 +5067,7 @@ input[type="button"].btn-block {
   color: rgba(34, 42, 66, 0.9);
 }
 
-.navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand:focus {
-  color: rgba(34, 42, 66, 0.9);
-}
+
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(34, 42, 66, 0.5);
@@ -15869,7 +15868,6 @@ img {
 }
 
 .navbar .navbar-brand {
-  position: fixed;
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   color: #ffffff;
@@ -20445,11 +20443,85 @@ Copyright (c) 2015 Daniel Eden
 /* CSS untuk efek hover pada tombol navbar */
 .navbar-nav .nav-item .nav-link {
   transition: background-color 0.3s ease-in-out; /* Transisi efek hover */
+  padding: 0.5rem 1rem; /* Atur padding agar tombol terlihat rapi */
+  border-radius: 5px; /* Rounding sudut untuk tampilan yang lebih lembut */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   background-color: #cb0c45; /* Warna latar belakang saat dihover */
   color: #fff; /* Ubah warna teks untuk kontras */
+}
+
+.footer {
+  background-color: #27293d;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+}
+
+/* Styling untuk image-container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 80px;
+}
+
+.image-container div {
+  margin: 0 10px;
+}
+
+/* Styling untuk gambar dalam image-container */
+.image-container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto; /* Menetapkan lebar maksimum gambar */
+  height: 50px; /* Menetapkan tinggi gambar */
+  transition: transform 0.3s ease; /* Efek animasi ketika gambar dihover */
+}
+
+/* Efek animasi pada gambar ketika dihover */
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.footer2 {
+  background-color: #27293d;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+}
+
+/* Styling untuk image-container */
+.image-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 80px;
+}
+
+.image-container2 div {
+  margin: 0 30px;
+}
+
+/* Styling untuk gambar dalam image-container */
+.image-container2 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto; /* Menetapkan lebar maksimum gambar */
+  height: 50px; /* Menetapkan tinggi gambar */
+  transition: transform 0.3s ease; /* Efek animasi ketika gambar dihover */
+}
+
+/* Efek animasi pada gambar ketika dihover */
+.image-container2 img:hover {
+  transform: scale(1.1);
 }
 
 

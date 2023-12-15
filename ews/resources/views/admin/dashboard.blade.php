@@ -13,30 +13,8 @@
      
 @include('layouts.navbar')
 
-     
-<!-- ... -->
-<center>
-  <div class="image-container">
-    <div class="ugtp">
-      <img width="200px" src="../assets/img/ugtechnopark.png" >
-    </div>
-  
-    <div class="merdeka">
-      <img width="100px" src="../assets/img/merdeka.png" >
-    </div>
-  
-    <div class="gundar">
-      <img width="100px" src="../assets/img/gundar.png" >
-    </div>
-  
-    <div class="kartanagari">
-      <img width="100px" src="../assets/img/kartanagari.png" >
-    </div>
-  </div>
-</center>
-<!-- ... -->
 
-  
+ <br> 
 <div class="container py-2 mt-2">
   <div class="row">
     <div class="col-lg-3">
@@ -175,6 +153,32 @@
       document.getElementById('randomKelembapan').innerText = randomKelembapan;
     }
   </script>
+
+<footer class="footer">
+  <center>
+    <p>&copy; Kartanagari 2023</p>
+    <p>Powered by: </p>
+    <div class="image-container">
+      <div class="ugtp">
+        <img width="200px" src="../assets/img/ugtechnopark.png">
+      </div>
+
+      <div class="merdeka">
+        <img width="100px" src="../assets/img/merdeka.png">
+      </div>
+
+      <div class="gundar">
+        <img width="100px" src="../assets/img/gundar.png">
+      </div>
+
+      <div class="kartanagari">
+        <img width="100px" src="../assets/img/kartanagari.png">
+      </div>
+    </div>
+  </center>
+</footer>
+
   </body>
 
 </html>
+
