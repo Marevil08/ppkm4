@@ -2,7 +2,7 @@
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #27293d;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8f14b8;">
     <div class="container-fluid">
       <!-- Navbar brand/logo -->
       <a class="navbar-brand" style="color: white;">Earthquake Early Warning System</a>
@@ -23,6 +23,10 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('about') }}" style="color: white;">About</a>
           </li>
+           <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:shintameidytaputri@gmail.com" style="color: white;">Contact</a>
+        </li>
         </ul>
       </div>
     </div>
@@ -35,8 +39,9 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center"> <br>
                 <h2>Our Featured Product</h2>
-                <img src="../assets/img/alat.jpg" alt="Featured Product">
-                <p>
+                <img src="../assets/img/alat.jpg" alt="Featured Product"> 
+                
+                <p> 
                     Early warning system gempa bumi adalah sebuah sistem teknologi yang digunakan untuk mengeluarkan peringatan sebelum 
                     atau saat gempa bumi terjadi. Fitur utama dari alat ini adalah sensor yang dapat mengukur dan mengumpulkan data 
                     seperti gerakan tanah, suhu, dan tekanan bumi. Data tersebut akan diproses oleh komputer untuk menentukan 
@@ -45,27 +50,18 @@
             </div>
         </div>
     </div>
-</div>
+</div> <br>
 
 <!-- About Section -->
-<div class="container-fluid about-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h2>About Us</h2>
-                <p>Mahasiswa Universitas Gunadarma angkatan 2020 dan 2021 yang mengikuti kegiatan PKKM 2023 di salah satu mitranya, yaitu Kartanagari. 
-                    Kegiatan ini merupakan kegiatan pengabdian masyarakat yang diselenggarakan oleh Kementerian 
-                    Pendidikan, Kebudayaan, Riset, dan Teknologi. Kegiatan ini bertujuan untuk meningkatkan kualitas hidup masyarakat 
-                    melalui pemberdayaan masyarakat.</p>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Mahasiswa Universitas Gunadarma angkatan 2020 dan 2021 yang mengikuti kegiatan PKKM 2023 di salah satu mitranya, yaitu Kartanagari. Kegiatan ini merupakan kegiatan pengabdian masyarakat yang diselenggarakan oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. Kegiatan ini bertujuan untuk meningkatkan kualitas hidup masyarakat melalui pemberdayaan masyarakat.</p>
+</div> <br>
 
 <div class="container team-section">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2>Our Team</h2>
+            <h2>Our Team</h2> <br>
         </div>
     </div>
     <div class="row">
@@ -93,7 +89,7 @@
                 <p>Universitas Gunadarma</p>
             </div>
         </div> 
-        <div class="col-lg-12"> <br>
+        <div class="col-lg-12"> <br> <br> <br>
             <div class="team-member d-flex flex-column justify-content-center align-items-center">
                 <img src="../assets/img/dosen.jpg" alt="Team Member" class="img-fluid">
                 <h4>Sandy S. Prayogo</h4>
@@ -102,12 +98,11 @@
             </div>
         </div>
     </div>
-</div> <br>
+</div> <br> <br>
 
 <footer class="footer2"> 
   <center>
-    <p>&copy; Kartanagari 2023</p>
-    <p>Powered by: </p>
+    <p>Participate with: </p>
     <div class="image-container2">
       <div class="ugtp">
         <img width="200px" src="../assets/img/ugtechnopark.png">

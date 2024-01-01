@@ -742,7 +742,7 @@ pre code {
 .col-auto {
   flex: 0 0 auto;
   width: auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .col-1 {
@@ -17803,7 +17803,7 @@ table.tablesorter thead tr .headerSortDown {
   float: right;
   width: 100%;
   min-height: 100vh;
-  border-top: 2px solid #e14eca;
+  
   background: linear-gradient(#1e1e2f, #1e1e24);
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -20453,11 +20453,12 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .footer {
-  background-color: #27293d;
+  background-color: #5e2e81;
   padding: 20px;
   text-align: center;
   color: white;
   font-family: inherit;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling untuk image-container */
@@ -20489,11 +20490,12 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .footer2 {
-  background-color: #27293d;
+  background-color: #5e2e81;
   padding: 20px;
   text-align: center;
   color: white;
   font-family: inherit;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling untuk image-container */
@@ -20523,6 +20525,114 @@ Copyright (c) 2015 Daniel Eden
 .image-container2 img:hover {
   transform: scale(1.1);
 }
+
+
+.col-auto img {
+  width: 40px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto; /* Menjaga aspek rasio */
+  margin-top: 5px; /* Sesuaikan margin atas sesuai kebutuhan */
+  margin-right: 50px; /* Sesuaikan margin kanan sesuai kebutuhan */
+  flex-direction: row;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #505363;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+.product-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:  rgba(255, 255, 255, 0.8);
+}
+
+.product-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border: 1px solid #dee2e6; 
+  border-radius: 10px; 
+}
+
+.product-section p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color:  rgba(255, 255, 255, 0.8);
+}
+
+/* Styling untuk bagian About Us */
+
+.about-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}
+
 
 
 /*# sourceMappingURL=dashboard-free.css.map */

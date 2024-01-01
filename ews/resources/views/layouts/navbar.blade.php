@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #27293d;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8f14b8;">
   <div class="container-fluid">
     <!-- Navbar brand/logo -->
     <a class="navbar-brand" style="color: white;">Earthquake Early Warning System</a>
@@ -19,6 +19,10 @@
         <!-- About -->
         <li class="nav-item">
           <a class="nav-link" href="{{ route('about') }}" style="color: white;">About</a>
+        </li>
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:shintameidytaputri@gmail.com" style="color: white;">Contact</a>
         </li>
       </ul>
     </div>

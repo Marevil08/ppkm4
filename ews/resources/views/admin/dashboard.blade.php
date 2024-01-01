@@ -15,51 +15,80 @@
 
 
  <br> 
-<div class="container py-2 mt-2">
-  <div class="row">
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-body">
+<div class="container py-2 mt-2" style="background-color: #5e2e81; border-radius: 22px;" > <br>
+  <div class="row" style="padding-right: 11px;">
+  <div class="col-lg-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <div>
           <h5 class="card-title">Akselerasi</h5>
           <p class="card-text" id="randomAkselerasi">-</p>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Rotasi</h5>
-          <p class="card-text" id="randomRotasi">-</p>
+        <div class="col-auto">
+          <img src="../assets/img/vibr.png" class="img-fluid" style="width: 100px; height: auto;">
         </div>
       </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Temperatur</h5>
-          <p class="card-text" id="randomTemperatur">-</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Kelembapan</h5>
-          <p class="card-text" id="randomKelembapan">-</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col-lg-12 d-flex justify-content-center">
-      <button class="btn btn-primary" onclick="generateRandomNumbers()">Generate Angka Acak</button>
     </div>
   </div>
 </div>
 
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+          <h5 class="card-title">Rotasi</h5>
+          <p class="card-text" id="randomRotasi">-</p>
+        </div>
+        <div class="col-auto">
+          <img src="../assets/img/rts.png" class="img-fluid" style="width: 100px; height: auto;">
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+          <h5 class="card-title">Temperatur</h5>
+          <p class="card-text" id="randomTemperatur">-</p>
+        </div>
+        <div class="col-auto">
+          <img src="../assets/img/tp.png" class="img-fluid" style="width: 100px; height: auto;">
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+          <h5 class="card-title">Kelembapan</h5>
+          <p class="card-text" id="randomKelembapan">-</p>
+        </div>
+        <div class="col-auto">
+          <img src="../assets/img/klmb.png" class="img-fluid" style="width: 100px; height: auto;">
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+  </div> <br> 
+  
+</div> 
+<div class="row mt-3">
+    <div class="col-lg-12 d-flex justify-content-center">
+      <button class="btn btn-primary" onclick="generateRandomNumbers()">Memasukkan Data Dummy</button>
+    </div>
+  </div>
 
-
-    <div class="container-fluid py-2 mt-2">
+<br>
+    <div class="container-fluid py-2 mt-2" > 
       <div class="row">
         <div class="col-lg-6">
           <div class="card z-index-2">
@@ -94,7 +123,7 @@
       </div>
     </div>    
 
-  <div class="container-fluid py-2 mt-2">
+  <div class="container-fluid py-2 mt-2" >
     <div class="row">
       <div class="col-lg-6">
         <div class="card z-index-2">
@@ -140,41 +169,70 @@
 
   <script>
     function generateRandomNumbers() {
-      // Menghasilkan angka acak untuk masing-masing card
-      let randomAkselerasi = Math.floor(Math.random() * 100) + 1;
-      let randomRotasi = Math.floor(Math.random() * 100) + 1;
-      let randomTemperatur = Math.floor(Math.random() * 100) + 1;
-      let randomKelembapan = Math.floor(Math.random() * 100) + 1;
-  
-      // Menampilkan angka acak pada masing-masing card
-      document.getElementById('randomAkselerasi').innerText = randomAkselerasi;
-      document.getElementById('randomRotasi').innerText = randomRotasi;
-      document.getElementById('randomTemperatur').innerText = randomTemperatur;
-      document.getElementById('randomKelembapan').innerText = randomKelembapan;
+    // Menghasilkan angka acak untuk masing-masing card
+    let randomAkselerasi = Math.floor(Math.random() * 100) + 1;
+    let randomRotasi = Math.floor(Math.random() * 100) + 1;
+    let randomTemperatur = Math.floor(Math.random() * (60 - (-60) + 1) + (-60)); // Range: -60 to 60
+    let randomKelembapan = Math.floor(Math.random() * 100) + 1;
+
+    // Menampilkan angka acak pada masing-masing card
+    setCardValue('randomAkselerasi', randomAkselerasi);
+    setCardValue('randomRotasi', randomRotasi);
+    setCardValue('randomTemperatur', randomTemperatur);
+    setCardValue('randomKelembapan', randomKelembapan);
+  }
+
+  function setCardValue(elementId, value) {
+    let element = document.getElementById(elementId);
+    let indicator;
+
+    if (elementId === 'randomTemperatur') {
+      // Menetapkan penanda untuk temperatur
+      if (value < 5) {
+        indicator = 'Dingin';
+        element.style.color = 'blue';  // Blue for cold
+      } else if (value < 37) {
+        indicator = 'Hangat';
+        element.style.color = 'orange';  // Orange for warm
+      } else {
+        indicator = 'Panas';
+        element.style.color = 'red';  // Red for hot
+      }
+    } else if (elementId === 'randomKelembapan') {
+      // Menetapkan penanda untuk kelembapan
+      if (value < 33) {
+        indicator = 'Rendah';
+        element.style.color = 'yellow';  // Yellow for low
+      } else if (value < 66) {
+        indicator = 'Ideal';
+        element.style.color = 'green';  // Green for ideal
+      } else {
+        indicator = 'Tinggi';
+        element.style.color = 'red';  // Blue for high
+      }
+    } else {
+      // Menetapkan penanda untuk parameter lainnya
+      if (value < 33) {
+        indicator = 'Aman';
+        element.style.color = 'green';
+      } else if (value < 66) {
+        indicator = 'Siaga';
+        element.style.color = 'orange';
+      } else {
+        indicator = 'Bahaya';
+        element.style.color = 'red';
+      }
     }
+
+    // Menambahkan penanda ke teks card
+    element.innerText = `${value} (${indicator})`;
+  }
   </script>
 
 <footer class="footer">
   <center>
     <p>&copy; Kartanagari 2023</p>
-    <p>Powered by: </p>
-    <div class="image-container">
-      <div class="ugtp">
-        <img width="200px" src="../assets/img/ugtechnopark.png">
-      </div>
-
-      <div class="merdeka">
-        <img width="100px" src="../assets/img/merdeka.png">
-      </div>
-
-      <div class="gundar">
-        <img width="100px" src="../assets/img/gundar.png">
-      </div>
-
-      <div class="kartanagari">
-        <img width="100px" src="../assets/img/kartanagari.png">
-      </div>
-    </div>
+    
   </center>
 </footer>
 

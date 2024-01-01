@@ -82,6 +82,8 @@ function updateChartAcceleration (timestamps, values){
         });
 }
 
+
+
 function updateHistoryData() {
     // Make an AJAX request to get real-time data
     $.ajax({
