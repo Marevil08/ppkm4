@@ -78,6 +78,14 @@
     </div>
     </div>
 </div>
+<div class="col-lg-12">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Status Keamanan</h5>
+      <p class="card-text" id="securityStatus">-</p>
+    </div>
+  </div>
+</div>
   </div> <br> 
   
 </div> 
@@ -174,13 +182,30 @@
     let randomRotasi = Math.floor(Math.random() * 100) + 1;
     let randomTemperatur = Math.floor(Math.random() * (60 - (-60) + 1) + (-60)); // Range: -60 to 60
     let randomKelembapan = Math.floor(Math.random() * 100) + 1;
+    let securityStatus = determineSecurityStatus(randomAkselerasi, randomRotasi);
 
     // Menampilkan angka acak pada masing-masing card
     setCardValue('randomAkselerasi', randomAkselerasi);
     setCardValue('randomRotasi', randomRotasi);
     setCardValue('randomTemperatur', randomTemperatur);
     setCardValue('randomKelembapan', randomKelembapan);
+    setSecurityStatus(securityStatus);
   }
+
+  function determineSecurityStatus(akselerasi, rotasi) {
+  let status;
+
+  // Tambahkan logika untuk menentukan status keamanan berdasarkan nilai yang diperoleh
+  if (akselerasi < 33 && rotasi < 33) {
+    status = 'Aman';
+  } else if ((akselerasi >= 33 && akselerasi < 66) || (rotasi >= 33 && rotasi < 66)) {
+    status = 'Siaga';
+  } else {
+    status = 'Bahaya';
+  }
+
+  return status;
+}
 
   function setCardValue(elementId, value) {
     let element = document.getElementById(elementId);
@@ -227,6 +252,21 @@
     // Menambahkan penanda ke teks card
     element.innerText = `${value} (${indicator})`;
   }
+
+  function setSecurityStatus(status) {
+  let securityElement = document.getElementById('securityStatus');
+
+  if (status === 'Aman') {
+    securityElement.style.color = 'green';
+  } else if (status === 'Siaga') {
+    securityElement.style.color = 'orange';
+  } else {
+    securityElement.style.color = 'red';
+  }
+
+  // Menampilkan status keamanan pada card
+  securityElement.innerText = status;
+}
   </script>
 
 <footer class="footer">
