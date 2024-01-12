@@ -22,7 +22,7 @@
         </li>
         <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="mailto:shintameidytaputri@gmail.com" style="color: white;">Contact</a>
+          <a class="nav-link" href="mailto:shintameidyta18@gmail.com" style="color: white;">Contact</a>
         </li>
       </ul>
     </div>

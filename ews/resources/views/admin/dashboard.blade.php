@@ -79,12 +79,9 @@
     </div>
 </div>
 <div class="col-lg-12">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Status Keamanan</h5>
-      <p class="card-text" id="securityStatus">-</p>
+  <div class="card-body text-center" style="border-radius: 22px; padding: 20px;">
+  <p class="card-text" id="securityStatus" style="font-size: 36px; margin: 0; border-radius: 5px; font-weight: bold; height: 100px; display: flex; align-items: center; justify-content: center;"></p>
     </div>
-  </div>
 </div>
   </div> <br> 
   
@@ -197,11 +194,11 @@
 
   // Tambahkan logika untuk menentukan status keamanan berdasarkan nilai yang diperoleh
   if (akselerasi < 33 && rotasi < 33) {
-    status = 'Aman';
+    status = 'AMAN';
   } else if ((akselerasi >= 33 && akselerasi < 66) || (rotasi >= 33 && rotasi < 66)) {
-    status = 'Siaga';
+    status = 'WASPADA';
   } else {
-    status = 'Bahaya';
+    status = 'GEMPA BUMI';
   }
 
   return status;
@@ -256,12 +253,18 @@
   function setSecurityStatus(status) {
   let securityElement = document.getElementById('securityStatus');
 
-  if (status === 'Aman') {
-    securityElement.style.color = 'green';
-  } else if (status === 'Siaga') {
-    securityElement.style.color = 'orange';
+  securityElement.style.fontSize = '24px';
+  securityElement.style.padding = '20px';
+
+  if (status === 'AMAN') {
+    securityElement.style.color = 'darkgreen';
+    securityElement.style.backgroundColor = 'lightgreen';  // Warna latar belakang hijau
+  } else if (status === 'WASPADA') {
+    securityElement.style.color = 'darkorange';
+    securityElement.style.backgroundColor = 'yellow';  // Warna latar belakang orange
   } else {
-    securityElement.style.color = 'red';
+    securityElement.style.color = 'darkred';
+    securityElement.style.backgroundColor = 'lightcoral';  // Warna latar belakang merah
   }
 
   // Menampilkan status keamanan pada card
