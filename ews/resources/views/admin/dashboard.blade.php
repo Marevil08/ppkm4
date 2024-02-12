@@ -86,12 +86,8 @@
   </div> <br> 
   
 </div> 
-<div class="row mt-3">
-    <div class="col-lg-12 d-flex justify-content-center">
-      <button class="btn btn-primary" onclick="generateRandomNumbers()">Memasukkan Data Dummy</button>
-    </div>
-  </div>
 
+<br>
 <br>
     <div class="container-fluid py-2 mt-2" > 
       <div class="row">
